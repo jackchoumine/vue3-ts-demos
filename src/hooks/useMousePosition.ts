@@ -2,7 +2,7 @@
  * @Description : 跟踪鼠标玩位置
  * @Date        : 2021-10-05 11:10:36 +0800
  * @Author      : JackChou
- * @LastEditTime: 2021-10-05 11:13:56 +0800
+ * @LastEditTime: 2021-10-05 20:39:15 +0800
  * @LastEditors : JackChou
  */
 
@@ -24,4 +24,4 @@ function useMousePosition() {
   return { positionX, positionY }
 }
 
-export default useMousePosition
+export { useMousePosition }
