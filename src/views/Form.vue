@@ -5,10 +5,11 @@
     <p>count:{{ count }}</p>
     <p>doubleCount:{{ doubleCount }}</p>
     <p><button @click="increase">加一</button></p>
+    <p>X:{{ positionX }},Y:{{ positionY }}</p>
   </div>
 </template>
 <script lang="ts">
-import { ref, reactive, watch, computed, toRefs } from 'vue'
+import { ref, reactive, watch, computed, toRefs, onMounted, onUnmounted } from 'vue'
 type dataPropsType = {
   count: number
   doubleCount: number
@@ -23,8 +24,22 @@ export default {
       increase: () => dataProps.count++,
       doubleCount: computed(() => dataProps.count * 2),
     })
+    const positionX = ref(0)
+    const positionY = ref(0)
+    const updateMousePosition = (event: MouseEvent) => {
+      positionX.value = event.pageX
+      positionY.value = event.pageY
+    }
+    onMounted(() => {
+      document.addEventListener('click', updateMousePosition)
+    })
+    onUnmounted(() => {
+      document.removeEventListener('click', updateMousePosition)
+    })
     return {
       ...toRefs(dataProps),
+      positionX,
+      positionY,
     }
   },
 }
