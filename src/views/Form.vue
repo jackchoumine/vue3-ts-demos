@@ -9,14 +9,14 @@
   </div>
 </template>
 <script lang="ts">
-import { ref, reactive, watch, computed, toRefs, onMounted, onUnmounted } from 'vue'
+import { ref, reactive, watch, computed, toRefs, defineComponent } from 'vue'
 import { useMousePosition } from '../hooks'
 type dataPropsType = {
   count: number
   doubleCount: number
   increase: () => void
 }
-export default {
+export default defineComponent({
   name: 'Form',
   components: {},
   setup(props, { emit, attrs, slots }) {
@@ -32,6 +32,6 @@ export default {
       mousePosition,
     }
   },
-}
+})
 </script>
 <style scoped lang="scss"></style>
