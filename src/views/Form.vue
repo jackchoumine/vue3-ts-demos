@@ -5,7 +5,7 @@
     <p>count:{{ count }}</p>
     <p>doubleCount:{{ doubleCount }}</p>
     <p><button @click="increase">加一</button></p>
-    <p>X:{{ mousePosition.positionX }},Y:{{ mousePosition.positionY }}</p>
+    <p>X:{{ mousePosition.x }},Y:{{ mousePosition.y }}</p>
   </div>
 </template>
 <script lang="ts">
@@ -26,6 +26,7 @@ export default {
       doubleCount: computed(() => dataProps.count * 2),
     })
     const mousePosition = useMousePosition()
+    console.log(mousePosition)
     return {
       ...toRefs(dataProps),
       mousePosition,
