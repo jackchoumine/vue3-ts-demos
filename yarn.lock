@@ -1816,6 +1816,11 @@
     "@vue/server-renderer" "3.2.19"
     "@vue/shared" "3.2.19"
 
+"vue3-webcomponent-wrapper@^0.1.4":
+  "integrity" "sha1-1J3cC1HFkiGjygzEl72gtwggW4s="
+  "resolved" "https://registry.npmmirror.com/vue3-webcomponent-wrapper/download/vue3-webcomponent-wrapper-0.1.4.tgz"
+  "version" "0.1.4"
+
 "which@^2.0.1":
   "integrity" "sha1-fGqN0KY2oDJ+ELWckobu6T8/UbE="
   "resolved" "https://registry.nlark.com/which/download/which-2.0.2.tgz"

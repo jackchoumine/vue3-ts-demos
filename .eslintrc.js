@@ -126,6 +126,7 @@ module.exports = {
       {
         registeredComponentsOnly: false,
         // ignores: ['component', 'keep-alive'],
+        ignores: ['/^web/'],
       },
     ],
   },

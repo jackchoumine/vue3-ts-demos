@@ -1,5 +1,12 @@
-import { createApp } from 'vue'
+import { createApp, h } from 'vue'
 import App from './App.vue'
+// @ts-ignore
+import wrapper from 'vue3-webcomponent-wrapper'
+import HelloWorld from './components/HelloWorld.vue'
+
+const WebHelloWorld = wrapper(HelloWorld, createApp, h)
+
+window.customElements.define('web-hello-world', WebHelloWorld)
 
 import { setupRouter } from './route/index'
 
