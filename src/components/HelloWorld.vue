@@ -1,9 +1,11 @@
 <template>
   <h1>{{ msg }}</h1>
+  <p>count:{{ count }}</p>
+  <button @click="add">+10</button>
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
+import { ref, defineComponent, SetupContext } from 'vue'
 export default defineComponent({
   name: 'HelloWorld',
   props: {
@@ -12,9 +14,14 @@ export default defineComponent({
       required: true,
     },
   },
-  setup: () => {
+  emits: ['plus'],
+  setup(_, ctx: SetupContext) {
     const count = ref(0)
-    return { count }
+    function add() {
+      count.value += 10
+      ctx.emit('plus', count.value)
+    }
+    return { count, add }
   },
 })
 </script>
