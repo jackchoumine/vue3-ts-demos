@@ -1,11 +1,16 @@
 <template>
-  <h1>{{ msg }}</h1>
-  <p>count:{{ count }}</p>
-  <button @click="add">+10</button>
+  <div>
+    <slot name="left"></slot>
+    <h1>{{ msg }}</h1>
+    <p>count:{{ count }}</p>
+    <slot name="default"></slot>
+    <button @click="add">+10</button>
+    <slot name="right" :doubleCount="doubleCount"></slot>
+  </div>
 </template>
 
 <script lang="ts">
-import { ref, defineComponent, SetupContext } from 'vue'
+import { ref, defineComponent, SetupContext, computed } from 'vue'
 export default defineComponent({
   name: 'HelloWorld',
   props: {
@@ -21,7 +26,8 @@ export default defineComponent({
       count.value += 10
       ctx.emit('plus', count.value)
     }
-    return { count, add }
+    const doubleCount = computed(() => count.value * 2)
+    return { count, add, doubleCount }
   },
 })
 </script>
