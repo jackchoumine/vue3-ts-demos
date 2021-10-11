@@ -125,7 +125,7 @@ module.exports = {
       'PascalCase',
       {
         registeredComponentsOnly: false,
-        ignores: ['/el-(.*)/', '/router(.*)/', 'component', 'keep-alive'],
+        // ignores: ['component', 'keep-alive'],
       },
     ],
   },
