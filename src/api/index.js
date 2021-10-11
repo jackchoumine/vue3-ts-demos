@@ -44,5 +44,5 @@ const images = {
 export { posts, photos, images }
 
 function wait(promise, n = 1500) {
-  return new Promise(res => setTimeout(() => res(promise), n))
+  return new Promise((res) => setTimeout(() => res(promise), n))
 }

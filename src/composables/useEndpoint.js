@@ -17,7 +17,7 @@ export default function useEndpoint(_ky, method, path, _options) {
     result: null,
   })
 
-  const call = async options => {
+  const call = async (options) => {
     state.error = null
     abortController = new AbortController()
     state.promise = wait(
@@ -45,5 +45,5 @@ export default function useEndpoint(_ky, method, path, _options) {
 }
 
 function wait(promise, n = 1500) {
-  return new Promise(res => setTimeout(() => res(promise), n))
+  return new Promise((res) => setTimeout(() => res(promise), n))
 }

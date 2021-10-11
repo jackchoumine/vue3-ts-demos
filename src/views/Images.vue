@@ -56,7 +56,7 @@ export default defineComponent({
       getImages(pagination.offset.value, pagination.perPage.value)
     })
 
-    watch(result, result => result && photos.push(...result))
+    watch(result, (result) => result && photos.push(...result))
 
     useEndOfPage(next, 150 /* px from bottom */)
 

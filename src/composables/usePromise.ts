@@ -1,6 +1,6 @@
 import { reactive, toRefs } from 'vue'
 
-export default function usePromise(fn: Function) {
+export default function usePromise(fn: (...rest: unknown[]) => Promise<unknown>) {
   if (!fn) {
     throw new Error(`[usePromise]: 1st argument is required (must be a function)`)
   }
@@ -15,16 +15,18 @@ export default function usePromise(fn: Function) {
   })
 
   let lastPromise
-  const use = async (...args: any) => {
+  const use = async (...args: unknown[]) => {
     state.error = null
     state.loading = true
     const promise = (lastPromise = fn(...args))
     try {
       const result = await promise
       if (lastPromise === promise) {
+        // @ts-ignore
         state.result = result
       }
     } catch (e) {
+      // @ts-ignore
       state.error = e
     } finally {
       state.loading = false

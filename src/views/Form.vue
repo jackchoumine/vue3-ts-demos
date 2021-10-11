@@ -1,37 +1,20 @@
 <template>
   <div>
-    <h1>form</h1>
-    <h2>reactive</h2>
-    <p>count:{{ count }}</p>
-    <p>doubleCount:{{ doubleCount }}</p>
-    <p><button @click="increase">加一</button></p>
-    <p>X:{{ mousePosition.x }},Y:{{ mousePosition.y }}</p>
+    <p>count:{{ counter.count }}</p>
+    <p>doubleCount:{{ counter.doubleCount }}</p>
+    <p><button @click="counter.increase.value">加一</button></p>
   </div>
 </template>
+
 <script lang="ts">
-import { ref, reactive, watch, computed, toRefs, defineComponent } from 'vue'
-import { useMousePosition } from '../hooks'
-type dataPropsType = {
-  count: number
-  doubleCount: number
-  increase: () => void
-}
+import { defineComponent } from 'vue'
+import { useCount } from '../hooks'
 export default defineComponent({
   name: 'Form',
-  components: {},
-  setup(props, { emit, attrs, slots }) {
-    const dataProps: dataPropsType = reactive({
-      count: 0,
-      increase: () => dataProps.count++,
-      doubleCount: computed(() => dataProps.count * 2),
-    })
-    const mousePosition = useMousePosition()
-    console.log(mousePosition)
-    return {
-      ...toRefs(dataProps),
-      mousePosition,
-    }
+  setup() {
+    const counter = useCount()
+    console.log(counter) // increase 属性是具有响应性
+    return { counter }
   },
 })
 </script>
-<style scoped lang="scss"></style>

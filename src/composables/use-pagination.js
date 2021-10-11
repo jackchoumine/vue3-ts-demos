@@ -13,7 +13,7 @@ export default function usePagination(options = {}) {
   const offset = computed(() => Math.min((currentPage.value - 1) * perPage.value, total.value))
 
   // Functions
-  const set = val => {
+  const set = (val) => {
     if (typeof val !== 'number') return
     _currentPage.value = minmax(val, 1, lastPage.value)
   }
@@ -37,7 +37,7 @@ export default function usePagination(options = {}) {
     // Mutable state
     perPage,
     total,
-    //Computed
+    // Computed
     currentPage,
     lastPage,
     offset,

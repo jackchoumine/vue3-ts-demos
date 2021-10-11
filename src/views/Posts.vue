@@ -4,11 +4,11 @@
   </div>
 </template>
 <script lang="ts">
-import { ref, reactive, watch, computed } from 'vue'
+// import { ref, reactive, watch, computed } from 'vue'
 export default {
   name: 'Posts',
   components: {},
-  setup(props, { emit, attrs, slots }) {
+  setup() {
     return {}
   },
 }

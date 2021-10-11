@@ -24,7 +24,7 @@ app.mixin({
 })
 
 // 注册全局组件
-app.component('globalComponent', {})
+app.component('GlobalComponent', {})
 // app.directive('') // 全局指令
 
 setupRouter(app)

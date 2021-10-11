@@ -8,15 +8,15 @@
 import FadeIn from './FadeInTransition'
 export default {
   name: 'Image',
+  components: {
+    FadeIn,
+  },
+  inheritAttrs: false,
   props: {
     src: {
       type: String,
       required: true,
     },
-  },
-  inheritAttrs: false,
-  components: {
-    FadeIn,
   },
 }
 </script>
