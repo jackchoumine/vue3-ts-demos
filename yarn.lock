@@ -257,6 +257,13 @@
     "@vue/compiler-dom" "3.2.19"
     "@vue/shared" "3.2.19"
 
+"@vue/composition-api@^1.0.0-rc.1", "@vue/composition-api@^1.1.0":
+  "integrity" "sha1-S+/O/A4cVw/Qh5oti4+QHzpONdA="
+  "resolved" "https://registry.npmmirror.com/@vue/composition-api/download/@vue/composition-api-1.2.4.tgz"
+  "version" "1.2.4"
+  dependencies:
+    "tslib" "^2.3.0"
+
 "@vue/eslint-config-prettier@^6.0.0":
   "integrity" "sha1-rVkSswj0rkaEWOAqKwXbC50kZwA="
   "resolved" "https://registry.npm.taobao.org/@vue/eslint-config-prettier/download/@vue/eslint-config-prettier-6.0.0.tgz"
@@ -323,6 +330,21 @@
   "integrity" "sha1-ER7D2hgzfYYnREaYTEmSWxsrLdc="
   "resolved" "https://registry.npmmirror.com/@vue/shared/download/@vue/shared-3.2.19.tgz"
   "version" "3.2.19"
+
+"@vueuse/core@^6.7.3":
+  "integrity" "sha1-GoJ+475VqYyTL3FkZzN6CCbVSZM="
+  "resolved" "https://registry.npmmirror.com/@vueuse/core/download/@vueuse/core-6.7.3.tgz"
+  "version" "6.7.3"
+  dependencies:
+    "@vueuse/shared" "6.7.3"
+    "vue-demi" "*"
+
+"@vueuse/shared@6.7.3":
+  "integrity" "sha1-ku1ps+eeGjCTb8Hx05oBB+jVIuA="
+  "resolved" "https://registry.npmmirror.com/@vueuse/shared/download/@vueuse/shared-6.7.3.tgz"
+  "version" "6.7.3"
+  dependencies:
+    "vue-demi" "*"
 
 "acorn-jsx@^5.2.0", "acorn-jsx@^5.3.1":
   "integrity" "sha1-ftW7VZCLOy8bxVxq8WU7rafweTc="
@@ -1707,6 +1729,11 @@
   "resolved" "https://registry.nlark.com/tslib/download/tslib-1.14.1.tgz?cache=0&sync_timestamp=1628722556410&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz"
   "version" "1.14.1"
 
+"tslib@^2.3.0":
+  "integrity" "sha1-6KM1rdXOrlGqJh0ypJAVjvBC7wE="
+  "resolved" "https://registry.nlark.com/tslib/download/tslib-2.3.1.tgz?cache=0&sync_timestamp=1628722556410&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-2.3.1.tgz"
+  "version" "2.3.1"
+
 "tsutils@^3.21.0":
   "integrity" "sha1-tIcX05TOpsHglpg+7Vjp1hcVtiM="
   "resolved" "https://registry.nlark.com/tsutils/download/tsutils-3.21.0.tgz?cache=0&sync_timestamp=1621262373716&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz"
@@ -1780,6 +1807,11 @@
   optionalDependencies:
     "fsevents" "~2.3.1"
 
+"vue-demi@*":
+  "integrity" "sha1-YQGZL+RyTPVjQBihbpU/MFLpTio="
+  "resolved" "https://registry.nlark.com/vue-demi/download/vue-demi-0.11.4.tgz"
+  "version" "0.11.4"
+
 "vue-eslint-parser@^7.0.0", "vue-eslint-parser@^7.10.0":
   "integrity" "sha1-IUtd6pYQB/z/su5luJEjB2KNDa8="
   "resolved" "https://registry.nlark.com/vue-eslint-parser/download/vue-eslint-parser-7.11.0.tgz?cache=0&sync_timestamp=1630882911486&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-eslint-parser%2Fdownload%2Fvue-eslint-parser-7.11.0.tgz"
@@ -1805,7 +1837,7 @@
   dependencies:
     "unzipper" "latest"
 
-"vue@^3.0.0", "vue@^3.0.5", "vue@3.0.7", "vue@3.2.19":
+"vue@^2.6.0 || ^3.2.0", "vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.0.5", "vue@>= 2.5 < 3", "vue@3.0.7", "vue@3.2.19":
   "integrity" "sha1-2iyApqAnHHCX/unjFpKt/Z1WnI8="
   "resolved" "https://registry.npmmirror.com/vue/download/vue-3.2.19.tgz"
   "version" "3.2.19"
