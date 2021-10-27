@@ -7,12 +7,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, onMounted } from 'vue'
 import { useCount } from '../hooks'
 export default defineComponent({
   name: 'Form',
   setup() {
     const counter = useCount()
+    onMounted(() => {
+      console.log('Form mounted')
+    })
     console.log(counter) // increase 属性是具有响应性
     return { counter }
   },
