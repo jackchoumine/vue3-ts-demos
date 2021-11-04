@@ -2,7 +2,7 @@
 
 > 什么是组合式的 API?
 
-vue3 引入的编写组件的方式。
+vue3 引入的组织组件代码的方式。
 
 vue2 语法
 
@@ -30,7 +30,7 @@ vue3 的语法：
 
 > 对象式 API 存在的问题
 
-1. 和上下文 this 强绑定，冗余代码，复用困难
+1. 和上下文 this 强绑定，冗余代码
 2. 逻辑复用困难，mixin 等依然有问题
 3. 类型支持不足，代码提示弱，不利于多人开发
 4. 按照 API 划分一业务代码，阅读困难
@@ -45,9 +45,9 @@ vue3 的语法：
 
 ## 可组合的函数
 
-可复用的逻辑集合，实现关注点分离
+可复用的逻辑集合，实现**关注点分离**
 
-## ref vs reactive
+## Ref vs Reactive
 
 ```js
 import { ref } from 'vue'
@@ -63,37 +63,39 @@ b.value = 10 // ✅
 ```js
 import { reactive } from 'vue'
 const a = { prop: 0 }
-const b = { prop: 0 }
+const b = reactive({ prop: 0 })
 a.prop = 10 // ✅
 b.prop = 10 // 不会报错  ✅
 ```
 
-### ref
+> FIXME 如何重置 Reactive?
+
+### Ref
 
 > 优点
 
 - 显示调用，类型检查，**明确知道是否为响应式数据**
-- 比 reactive 局限少
+- 比 Reactive 局限少
 
 > 缺点
 
 - `.value` 具有一定的心智负担，反自觉
 
-### reactive
+### Reactive
 
 > 优点
 
-- 自动解开(unwrap) 【函数不会自动解包】
+- 自动解开(unwrap),不需要`.value` 【函数不会自动解包】
 
 > 缺点
 
 - 类型和一般对象没区别，难以知道是否为响应式数据
-- ES6 解构，丢失响应式
-- 需要爱使用箭头函数包装才可`watch`
+- **ES6 解构，丢失响应式**
+- 需要使用箭头函数包装才可`watch`
 
 ### 如何降低 `.value` 的心智负担?
 
-ref 自动解包的情况
+Ref 自动解包的情况
 
 - 作为 watch 的监听对象自动解包， 回调返回解包后的值
 
@@ -113,7 +115,7 @@ watch(count, (newVal, oldVal) => {
 <!--❌ 错误用法-->
 ```
 
-- reactive 包裹 ref，ref 解包
+- Reactive 包裹 Ref，Ref 解包
 
 ```js
 const count = ref(0)
@@ -121,16 +123,21 @@ const obj = reactive({ count, name: 'Mason' })
 console.log(obj.count) // 0
 ```
 
-### ref 的反操作 `unref` --- 手动解包
+### Ref 的反操作 `unref` --- 手动解包
 
 ```js
 function unref(r: Ref<T> | T) {
   return isRef(r) ? r.value : r
 }
 // 返回 非响应式的值
+// FIXME toRaw 是什么作用？
+// Proxy vs Ref
+// isProxy vs isRef
 ```
 
-> 技巧：使用 ref 作为参数，返回 ref
+> 技巧：使用 Ref 作为参数，返回 Ref
+
+为何返回 Ref: 可直接在模板中使用，不必关心`.value`
 
 ```ts
 // 普通函数
@@ -228,13 +235,13 @@ function useFoo(foo: Ref<string>) {
 
 ### 总结
 
-- `MaybeRef<T>` 配合 ref 和 unref；
+- `MaybeRef<T>` 配合 Ref 和 unref；
 - 使用 ref() 得到 Ref；
 - 使用 unref 得到普通值。
 
 ## ref 组成的对象
 
-返回 ref 组成的对象，可获得 ref 和 reactive 的好处。
+返回 Ref 组成的对象，可获得 Ref 和 Reactive 的好处。
 
 ```js
 function useMouse() {
@@ -253,7 +260,7 @@ position.x === x.value // true
 好处：
 
 - 避免解构丢失响应性
-- 希望自动解包，使用 reactive 转为对象
+- 希望自动解包，使用 Reactive 转为对象
 
 ## 将异步操作变成同步代码
 
@@ -328,6 +335,8 @@ import { reactive } from 'vue'
 export const state = reactive({ age: 10 })
 // 30:00
 ```
+
+> FIXME provide and inject
 
 ### useVModel
 
