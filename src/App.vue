@@ -3,7 +3,7 @@
     <!-- <NotificationProvider> -->
     <div id="nav">
       <RouterLink to="/">Home</RouterLink> | <RouterLink to="/examples">Examples</RouterLink> |
-      <RouterLink to="/">Home</RouterLink> | <RouterLink to="/form">Form Validation</RouterLink> |
+      <RouterLink to="/form">Form Validation</RouterLink> |
       <RouterLink to="/posts">Paginated Posts</RouterLink> |
       <RouterLink to="/images">Infinite Images</RouterLink> |
       <RouterLink to="/upload">Upload Dropzone</RouterLink>
