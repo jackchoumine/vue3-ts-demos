@@ -2,29 +2,29 @@
  * @Description : 
  * @Date        : 2021-11-08 00:00:52 +0800
  * @Author      : JackChou
- * @LastEditTime: 2021-11-08 00:17:04 +0800
+ * @LastEditTime: 2021-11-08 00:24:31 +0800
  * @LastEditors : JackChou
 -->
 <template>
   <div class="img-container">
     <img
-      src="600px-PlaceholderLC.png"
+      :src="placeholderImg"
       data-src="https://images.unsplash.com/photo-1504272017915-32d1bd315a59?fit=crop&w=600&q=80"
     /><br />
     <img
-      src="600px-PlaceholderLC.png"
+      :src="placeholderImg"
       data-src="https://images.unsplash.com/photo-1502716643504-c4ea7b357d91?fit=crop&w=600&q=80"
     /><br />
     <img
-      src="600px-PlaceholderLC.png"
+      :src="placeholderImg"
       data-src="https://images.unsplash.com/photo-1502716716838-6ad177344906?fit=crop&w=600&q=80"
     /><br />
     <img
-      src="600px-PlaceholderLC.png"
+      :src="placeholderImg"
       data-src="https://images.unsplash.com/photo-1504271933050-2cf260bbec95?fit=crop&w=600&q=80"
     /><br />
     <img
-      src="600px-PlaceholderLC.png"
+      :src="placeholderImg"
       data-src="https://images.unsplash.com/photo-1502716197620-bf14ce1651b3?fit=crop&w=600&q=80"
     />
     <br />
@@ -32,7 +32,7 @@
 </template>
 <script setup>
 import { ref, onMounted } from 'vue'
-const input = ref('hello')
+const placeholderImg = ref('https://fakeimg.pl/600x420/?text=loading...')
 onMounted(() => {
   let observer = new IntersectionObserver(
     (entries, observer) => {
@@ -44,7 +44,7 @@ onMounted(() => {
       })
     },
     //NOTE 可以设置触发事件的范围,距离根元素底部 -200px 时，发生交叉 即图片向上移动 200px 才发生交叉
-    { rootMargin: '0px 0px -250px 0px', root: document.querySelector('.img-container') }
+    { rootMargin: '0px 0px -420px 0px', root: document.querySelector('.img-container') }
   )
   document
     .querySelector('.img-container')
