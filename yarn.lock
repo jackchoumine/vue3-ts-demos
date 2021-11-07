@@ -4,7 +4,7 @@
 
 "@babel/helper-validator-identifier@^7.15.7":
   "integrity" "sha1-Ig35k7/pBKSmsCq08zhaXr9uI4k="
-  "resolved" "https://registry.nlark.com/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.15.7.tgz?cache=0&sync_timestamp=1631920000984&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fhelper-validator-identifier%2Fdownload%2F%40babel%2Fhelper-validator-identifier-7.15.7.tgz"
+  "resolved" "https://registry.nlark.com/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.15.7.tgz?cache=0&sync_timestamp=1631921299259&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fhelper-validator-identifier%2Fdownload%2F%40babel%2Fhelper-validator-identifier-7.15.7.tgz"
   "version" "7.15.7"
 
 "@babel/parser@^7.15.0", "@babel/parser@^7.6.0", "@babel/parser@^7.9.6":
@@ -593,12 +593,12 @@
 
 "assert-never@^1.2.1":
   "integrity" "sha1-EfDjY78UYgX7CBk7XHuQ9NHPRP4="
-  "resolved" "https://registry.npm.taobao.org/assert-never/download/assert-never-1.2.1.tgz"
+  "resolved" "https://registry.nlark.com/assert-never/download/assert-never-1.2.1.tgz"
   "version" "1.2.1"
 
 "babel-walk@3.0.0-canary-5":
   "integrity" "sha1-9m7Ncpg1eu5ElV8jWm71QhkQSxE="
-  "resolved" "https://registry.npm.taobao.org/babel-walk/download/babel-walk-3.0.0-canary-5.tgz"
+  "resolved" "https://registry.nlark.com/babel-walk/download/babel-walk-3.0.0-canary-5.tgz"
   "version" "3.0.0-canary-5"
   dependencies:
     "@babel/types" "^7.9.6"
@@ -646,7 +646,7 @@
 
 "call-bind@^1.0.2":
   "integrity" "sha1-sdTonmiBGcPJqQOtMKuy9qkZvjw="
-  "resolved" "https://registry.nlark.com/call-bind/download/call-bind-1.0.2.tgz"
+  "resolved" "https://registry.nlark.com/call-bind/download/call-bind-1.0.2.tgz?cache=0&sync_timestamp=1621222550090&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcall-bind%2Fdownload%2Fcall-bind-1.0.2.tgz"
   "version" "1.0.2"
   dependencies:
     "function-bind" "^1.1.1"
@@ -726,7 +726,7 @@
 
 "constantinople@^4.0.1":
   "integrity" "sha1-De8RP6Dk3I3oMzGlz3nIsyUhMVE="
-  "resolved" "https://registry.npm.taobao.org/constantinople/download/constantinople-4.0.1.tgz"
+  "resolved" "https://registry.nlark.com/constantinople/download/constantinople-4.0.1.tgz"
   "version" "4.0.1"
   dependencies:
     "@babel/parser" "^7.6.0"
@@ -774,12 +774,12 @@
 
 "doctypes@^1.1.0":
   "integrity" "sha1-6oCxBqh1OHdOijpKWv4pPeSJ4Kk="
-  "resolved" "https://registry.npm.taobao.org/doctypes/download/doctypes-1.1.0.tgz"
+  "resolved" "https://registry.nlark.com/doctypes/download/doctypes-1.1.0.tgz"
   "version" "1.1.0"
 
 "dom-serializer@^1.0.1":
   "integrity" "sha1-YgZDfTLO767HFhgDIwx6ILwbTZE="
-  "resolved" "https://registry.nlark.com/dom-serializer/download/dom-serializer-1.3.2.tgz?cache=0&sync_timestamp=1621256830355&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fdom-serializer%2Fdownload%2Fdom-serializer-1.3.2.tgz"
+  "resolved" "https://registry.nlark.com/dom-serializer/download/dom-serializer-1.3.2.tgz?cache=0&sync_timestamp=1621256819522&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fdom-serializer%2Fdownload%2Fdom-serializer-1.3.2.tgz"
   "version" "1.3.2"
   dependencies:
     "domelementtype" "^2.0.1"
@@ -788,7 +788,7 @@
 
 "domelementtype@^2.0.1", "domelementtype@^2.2.0":
   "integrity" "sha1-mgtsJ4LtahxzI9QiZxg9+b2LHVc="
-  "resolved" "https://registry.npm.taobao.org/domelementtype/download/domelementtype-2.2.0.tgz?cache=0&sync_timestamp=1617298545989&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomelementtype%2Fdownload%2Fdomelementtype-2.2.0.tgz"
+  "resolved" "https://registry.npm.taobao.org/domelementtype/download/domelementtype-2.2.0.tgz"
   "version" "2.2.0"
 
 "domhandler@^4.2.0", "domhandler@^4.2.2":
@@ -800,7 +800,7 @@
 
 "domutils@^2.8.0":
   "integrity" "sha1-RDfe9dtuLR9dbuhZvZXKfQIEgTU="
-  "resolved" "https://registry.nlark.com/domutils/download/domutils-2.8.0.tgz?cache=0&sync_timestamp=1630106606599&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fdomutils%2Fdownload%2Fdomutils-2.8.0.tgz"
+  "resolved" "https://registry.npmmirror.com/domutils/download/domutils-2.8.0.tgz"
   "version" "2.8.0"
   dependencies:
     "dom-serializer" "^1.0.1"
@@ -837,12 +837,12 @@
 
 "entities@^2.0.0":
   "integrity" "sha1-CY3JDruD2N/6CJ1VJWs1HTTE2lU="
-  "resolved" "https://registry.nlark.com/entities/download/entities-2.2.0.tgz"
+  "resolved" "https://registry.nlark.com/entities/download/entities-2.2.0.tgz?cache=0&sync_timestamp=1628508126700&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fentities%2Fdownload%2Fentities-2.2.0.tgz"
   "version" "2.2.0"
 
 "entities@^3.0.1":
   "integrity" "sha1-K4h8piWF6W2zkDSC0zbBAGwwAdQ="
-  "resolved" "https://registry.nlark.com/entities/download/entities-3.0.1.tgz"
+  "resolved" "https://registry.nlark.com/entities/download/entities-3.0.1.tgz?cache=0&sync_timestamp=1628508126700&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fentities%2Fdownload%2Fentities-3.0.1.tgz"
   "version" "3.0.1"
 
 "es-module-lexer@^0.9.0":
@@ -1224,12 +1224,12 @@
 
 "has-symbols@^1.0.1", "has-symbols@^1.0.2":
   "integrity" "sha1-Fl0wcMADCXUqEjakeTMeOsVvFCM="
-  "resolved" "https://registry.nlark.com/has-symbols/download/has-symbols-1.0.2.tgz"
+  "resolved" "https://registry.nlark.com/has-symbols/download/has-symbols-1.0.2.tgz?cache=0&sync_timestamp=1621222543548&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fhas-symbols%2Fdownload%2Fhas-symbols-1.0.2.tgz"
   "version" "1.0.2"
 
 "has-tostringtag@^1.0.0":
   "integrity" "sha1-fhM4GKfTlHNPlB5zw9P5KR5liyU="
-  "resolved" "https://registry.nlark.com/has-tostringtag/download/has-tostringtag-1.0.0.tgz?cache=0&sync_timestamp=1628196402801&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fhas-tostringtag%2Fdownload%2Fhas-tostringtag-1.0.0.tgz"
+  "resolved" "https://registry.nlark.com/has-tostringtag/download/has-tostringtag-1.0.0.tgz?cache=0&sync_timestamp=1628198783759&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fhas-tostringtag%2Fdownload%2Fhas-tostringtag-1.0.0.tgz"
   "version" "1.0.0"
   dependencies:
     "has-symbols" "^1.0.2"
@@ -1243,7 +1243,7 @@
 
 "htmlparser2@^7.1.2":
   "integrity" "sha1-WHkj048DvIngMHbgDLosdHPzf3w="
-  "resolved" "https://registry.nlark.com/htmlparser2/download/htmlparser2-7.1.2.tgz?cache=0&sync_timestamp=1631386311915&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fhtmlparser2%2Fdownload%2Fhtmlparser2-7.1.2.tgz"
+  "resolved" "https://registry.nlark.com/htmlparser2/download/htmlparser2-7.1.2.tgz"
   "version" "7.1.2"
   dependencies:
     "domelementtype" "^2.0.1"
@@ -1308,7 +1308,7 @@
 
 "is-expression@^4.0.0":
   "integrity" "sha1-wzFVliq/IdCv0lUlFNZ9LsFv0qs="
-  "resolved" "https://registry.npm.taobao.org/is-expression/download/is-expression-4.0.0.tgz"
+  "resolved" "https://registry.nlark.com/is-expression/download/is-expression-4.0.0.tgz"
   "version" "4.0.0"
   dependencies:
     "acorn" "^7.1.1"
@@ -1333,12 +1333,12 @@
 
 "is-promise@^2.0.0":
   "integrity" "sha1-OauVnMv5p3TPB597QMeib3YxNfE="
-  "resolved" "https://registry.nlark.com/is-promise/download/is-promise-2.2.2.tgz"
+  "resolved" "https://registry.npmmirror.com/is-promise/download/is-promise-2.2.2.tgz"
   "version" "2.2.2"
 
 "is-regex@^1.0.3":
   "integrity" "sha1-7vVmPNWfpMCuM5UFMj32hUuxWVg="
-  "resolved" "https://registry.nlark.com/is-regex/download/is-regex-1.1.4.tgz?cache=0&sync_timestamp=1628221853554&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fis-regex%2Fdownload%2Fis-regex-1.1.4.tgz"
+  "resolved" "https://registry.nlark.com/is-regex/download/is-regex-1.1.4.tgz"
   "version" "1.1.4"
   dependencies:
     "call-bind" "^1.0.2"
@@ -1537,7 +1537,7 @@
 
 "object-assign@^4.1.1":
   "integrity" "sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM="
-  "resolved" "https://registry.nlark.com/object-assign/download/object-assign-4.1.1.tgz?cache=0&sync_timestamp=1618847043548&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fobject-assign%2Fdownload%2Fobject-assign-4.1.1.tgz"
+  "resolved" "https://registry.nlark.com/object-assign/download/object-assign-4.1.1.tgz"
   "version" "4.1.1"
 
 "once@^1.3.0":
@@ -1645,14 +1645,14 @@
 
 "promise@^7.0.1":
   "integrity" "sha1-BktyYCsY+Q8pGSuLG8QY/9Hr078="
-  "resolved" "https://registry.nlark.com/promise/download/promise-7.3.1.tgz"
+  "resolved" "https://registry.nlark.com/promise/download/promise-7.3.1.tgz?cache=0&sync_timestamp=1618846968114&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpromise%2Fdownload%2Fpromise-7.3.1.tgz"
   "version" "7.3.1"
   dependencies:
     "asap" "~2.0.3"
 
 "pug-attrs@^3.0.0":
   "integrity" "sha1-sQRR4DSBZeMfrRzCPr3dncc0fEE="
-  "resolved" "https://registry.npm.taobao.org/pug-attrs/download/pug-attrs-3.0.0.tgz"
+  "resolved" "https://registry.nlark.com/pug-attrs/download/pug-attrs-3.0.0.tgz"
   "version" "3.0.0"
   dependencies:
     "constantinople" "^4.0.1"
@@ -1661,7 +1661,7 @@
 
 "pug-code-gen@^3.0.2":
   "integrity" "sha1-rRkPSUMTO/GGtguA3kgxAOEy4s4="
-  "resolved" "https://registry.npm.taobao.org/pug-code-gen/download/pug-code-gen-3.0.2.tgz"
+  "resolved" "https://registry.nlark.com/pug-code-gen/download/pug-code-gen-3.0.2.tgz"
   "version" "3.0.2"
   dependencies:
     "constantinople" "^4.0.1"
@@ -1680,7 +1680,7 @@
 
 "pug-filters@^4.0.0":
   "integrity" "sha1-0+Sa9bqEcum3pm2YDnB86dLMm14="
-  "resolved" "https://registry.npm.taobao.org/pug-filters/download/pug-filters-4.0.0.tgz"
+  "resolved" "https://registry.nlark.com/pug-filters/download/pug-filters-4.0.0.tgz"
   "version" "4.0.0"
   dependencies:
     "constantinople" "^4.0.1"
@@ -1691,7 +1691,7 @@
 
 "pug-lexer@^5.0.1":
   "integrity" "sha1-rkRijFvvmxkLZlaDsojKkCS4sNU="
-  "resolved" "https://registry.npm.taobao.org/pug-lexer/download/pug-lexer-5.0.1.tgz"
+  "resolved" "https://registry.nlark.com/pug-lexer/download/pug-lexer-5.0.1.tgz"
   "version" "5.0.1"
   dependencies:
     "character-parser" "^2.2.0"
@@ -1700,7 +1700,7 @@
 
 "pug-linker@^4.0.0":
   "integrity" "sha1-EsvAWU/Fo+Brn8Web5PBRpYqdwg="
-  "resolved" "https://registry.npm.taobao.org/pug-linker/download/pug-linker-4.0.0.tgz"
+  "resolved" "https://registry.nlark.com/pug-linker/download/pug-linker-4.0.0.tgz"
   "version" "4.0.0"
   dependencies:
     "pug-error" "^2.0.0"
@@ -1708,7 +1708,7 @@
 
 "pug-load@^3.0.0":
   "integrity" "sha1-n9nNpSICsIrbEdJWgfufNL1BtmI="
-  "resolved" "https://registry.npm.taobao.org/pug-load/download/pug-load-3.0.0.tgz"
+  "resolved" "https://registry.nlark.com/pug-load/download/pug-load-3.0.0.tgz"
   "version" "3.0.0"
   dependencies:
     "object-assign" "^4.1.1"
@@ -1716,7 +1716,7 @@
 
 "pug-parser@^6.0.0":
   "integrity" "sha1-qP3ANYY6lbLB3F6/Ts+AtOdqEmA="
-  "resolved" "https://registry.npm.taobao.org/pug-parser/download/pug-parser-6.0.0.tgz"
+  "resolved" "https://registry.nlark.com/pug-parser/download/pug-parser-6.0.0.tgz"
   "version" "6.0.0"
   dependencies:
     "pug-error" "^2.0.0"
@@ -1724,24 +1724,24 @@
 
 "pug-runtime@^3.0.0", "pug-runtime@^3.0.1":
   "integrity" "sha1-9jaXYgRyPzWoxfb61qzaKhkbg9c="
-  "resolved" "https://registry.npm.taobao.org/pug-runtime/download/pug-runtime-3.0.1.tgz"
+  "resolved" "https://registry.nlark.com/pug-runtime/download/pug-runtime-3.0.1.tgz"
   "version" "3.0.1"
 
 "pug-strip-comments@^2.0.0":
   "integrity" "sha1-+UsH/WtJVSMzD0kKf1VLT/h2MD4="
-  "resolved" "https://registry.npm.taobao.org/pug-strip-comments/download/pug-strip-comments-2.0.0.tgz"
+  "resolved" "https://registry.nlark.com/pug-strip-comments/download/pug-strip-comments-2.0.0.tgz"
   "version" "2.0.0"
   dependencies:
     "pug-error" "^2.0.0"
 
 "pug-walk@^2.0.0":
   "integrity" "sha1-QXqrwpIyu0SZtbUGmistKiTV9f4="
-  "resolved" "https://registry.npm.taobao.org/pug-walk/download/pug-walk-2.0.0.tgz"
+  "resolved" "https://registry.nlark.com/pug-walk/download/pug-walk-2.0.0.tgz"
   "version" "2.0.0"
 
 "pug@^3.0.2":
   "integrity" "sha1-81xxBzQ0VOQ7wnrg/3bHMbeOpTU="
-  "resolved" "https://registry.npm.taobao.org/pug/download/pug-3.0.2.tgz"
+  "resolved" "https://registry.nlark.com/pug/download/pug-3.0.2.tgz"
   "version" "3.0.2"
   dependencies:
     "pug-code-gen" "^3.0.2"
@@ -1869,7 +1869,7 @@
 
 "semver@^7.3.5":
   "integrity" "sha1-C2Ich5NI2JmOSw5L6Us/EuYBjvc="
-  "resolved" "https://registry.nlark.com/semver/download/semver-7.3.5.tgz?cache=0&sync_timestamp=1618847119601&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsemver%2Fdownload%2Fsemver-7.3.5.tgz"
+  "resolved" "https://registry.npm.taobao.org/semver/download/semver-7.3.5.tgz"
   "version" "7.3.5"
   dependencies:
     "lru-cache" "^6.0.0"
@@ -1990,7 +1990,7 @@
 
 "to-fast-properties@^2.0.0":
   "integrity" "sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4="
-  "resolved" "https://registry.nlark.com/to-fast-properties/download/to-fast-properties-2.0.0.tgz?cache=0&sync_timestamp=1628418893613&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fto-fast-properties%2Fdownload%2Fto-fast-properties-2.0.0.tgz"
+  "resolved" "https://registry.nlark.com/to-fast-properties/download/to-fast-properties-2.0.0.tgz?cache=0&sync_timestamp=1628418925592&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fto-fast-properties%2Fdownload%2Fto-fast-properties-2.0.0.tgz"
   "version" "2.0.0"
 
 "to-regex-range@^5.0.1":
@@ -2002,7 +2002,7 @@
 
 "token-stream@1.0.0":
   "integrity" "sha1-zCAOqyYT9BZtJ/+a/HylbUnfbrQ="
-  "resolved" "https://registry.npm.taobao.org/token-stream/download/token-stream-1.0.0.tgz"
+  "resolved" "https://registry.nlark.com/token-stream/download/token-stream-1.0.0.tgz"
   "version" "1.0.0"
 
 "tslib@^1.8.1":
@@ -2036,7 +2036,7 @@
 
 "upath@^2.0.1":
   "integrity" "sha1-UMc96mjW9rmQ9R0nnOYIFmXWGos="
-  "resolved" "https://registry.npm.taobao.org/upath/download/upath-2.0.1.tgz"
+  "resolved" "https://registry.nlark.com/upath/download/upath-2.0.1.tgz"
   "version" "2.0.1"
 
 "uri-js@^4.2.2":
@@ -2065,12 +2065,12 @@
 
 "void-elements@^3.1.0":
   "integrity" "sha1-YU9/v42AHwu18GYfWy9XhXUOTwk="
-  "resolved" "https://registry.npm.taobao.org/void-elements/download/void-elements-3.1.0.tgz"
+  "resolved" "https://registry.nlark.com/void-elements/download/void-elements-3.1.0.tgz"
   "version" "3.1.0"
 
 "vscode-css-languageservice@^5.1.7":
   "integrity" "sha1-Nss4l4j/wtXmYw/8hOVe44+KIzg="
-  "resolved" "https://registry.npmmirror.com/vscode-css-languageservice/download/vscode-css-languageservice-5.1.8.tgz?cache=0&sync_timestamp=1635297661012&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-css-languageservice%2Fdownload%2Fvscode-css-languageservice-5.1.8.tgz"
+  "resolved" "https://registry.npmmirror.com/vscode-css-languageservice/download/vscode-css-languageservice-5.1.8.tgz?cache=0&sync_timestamp=1635297312292&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-css-languageservice%2Fdownload%2Fvscode-css-languageservice-5.1.8.tgz"
   "version" "5.1.8"
   dependencies:
     "vscode-languageserver-textdocument" "^1.0.1"
@@ -2080,7 +2080,7 @@
 
 "vscode-html-languageservice@^4.1.0":
   "integrity" "sha1-k3Ocnz0MEsgkm60j9QBYUMKJ7Dg="
-  "resolved" "https://registry.npmmirror.com/vscode-html-languageservice/download/vscode-html-languageservice-4.1.1.tgz?cache=0&sync_timestamp=1635297661450&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-html-languageservice%2Fdownload%2Fvscode-html-languageservice-4.1.1.tgz"
+  "resolved" "https://registry.npmmirror.com/vscode-html-languageservice/download/vscode-html-languageservice-4.1.1.tgz?cache=0&sync_timestamp=1635297312239&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-html-languageservice%2Fdownload%2Fvscode-html-languageservice-4.1.1.tgz"
   "version" "4.1.1"
   dependencies:
     "vscode-languageserver-textdocument" "^1.0.1"
@@ -2090,7 +2090,7 @@
 
 "vscode-json-languageservice@^4.1.8":
   "integrity" "sha1-+0jtxp43Fnw8r9RHw/qJgFLYe2E="
-  "resolved" "https://registry.npmmirror.com/vscode-json-languageservice/download/vscode-json-languageservice-4.1.9.tgz?cache=0&sync_timestamp=1635297662368&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-json-languageservice%2Fdownload%2Fvscode-json-languageservice-4.1.9.tgz"
+  "resolved" "https://registry.npmmirror.com/vscode-json-languageservice/download/vscode-json-languageservice-4.1.9.tgz?cache=0&sync_timestamp=1635297312615&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-json-languageservice%2Fdownload%2Fvscode-json-languageservice-4.1.9.tgz"
   "version" "4.1.9"
   dependencies:
     "jsonc-parser" "^3.0.0"
@@ -2101,12 +2101,12 @@
 
 "vscode-jsonrpc@^8.0.0-next.2", "vscode-jsonrpc@8.0.0-next.3":
   "integrity" "sha1-tV7f8OVQsD84BKreRKyiaZryclU="
-  "resolved" "https://registry.npmmirror.com/vscode-jsonrpc/download/vscode-jsonrpc-8.0.0-next.3.tgz"
+  "resolved" "https://registry.npmmirror.com/vscode-jsonrpc/download/vscode-jsonrpc-8.0.0-next.3.tgz?cache=0&sync_timestamp=1633678431047&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-jsonrpc%2Fdownload%2Fvscode-jsonrpc-8.0.0-next.3.tgz"
   "version" "8.0.0-next.3"
 
 "vscode-languageserver-protocol@3.17.0-next.9":
   "integrity" "sha1-D9StQ2EclqzYPY2Zjb52Zo9g5gQ="
-  "resolved" "https://registry.npmmirror.com/vscode-languageserver-protocol/download/vscode-languageserver-protocol-3.17.0-next.9.tgz"
+  "resolved" "https://registry.npmmirror.com/vscode-languageserver-protocol/download/vscode-languageserver-protocol-3.17.0-next.9.tgz?cache=0&sync_timestamp=1633678431630&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-languageserver-protocol%2Fdownload%2Fvscode-languageserver-protocol-3.17.0-next.9.tgz"
   "version" "3.17.0-next.9"
   dependencies:
     "vscode-jsonrpc" "8.0.0-next.3"
@@ -2114,22 +2114,22 @@
 
 "vscode-languageserver-textdocument@^1.0.1":
   "integrity" "sha1-L59r1bXrPY4hQkwMNnAJIW8BYjY="
-  "resolved" "https://registry.npmmirror.com/vscode-languageserver-textdocument/download/vscode-languageserver-textdocument-1.0.2.tgz?cache=0&sync_timestamp=1633679218494&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-languageserver-textdocument%2Fdownload%2Fvscode-languageserver-textdocument-1.0.2.tgz"
+  "resolved" "https://registry.npmmirror.com/vscode-languageserver-textdocument/download/vscode-languageserver-textdocument-1.0.2.tgz"
   "version" "1.0.2"
 
 "vscode-languageserver-types@^3.15.1", "vscode-languageserver-types@^3.16.0":
   "integrity" "sha1-7POT/BIexpdLLaPvsxVWRMUU4kc="
-  "resolved" "https://registry.npmmirror.com/vscode-languageserver-types/download/vscode-languageserver-types-3.16.0.tgz?cache=0&sync_timestamp=1633679217268&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-languageserver-types%2Fdownload%2Fvscode-languageserver-types-3.16.0.tgz"
+  "resolved" "https://registry.npmmirror.com/vscode-languageserver-types/download/vscode-languageserver-types-3.16.0.tgz"
   "version" "3.16.0"
 
 "vscode-languageserver-types@3.17.0-next.4":
   "integrity" "sha1-9niLN17BY9qLOB8vPj9UfLx/vuw="
-  "resolved" "https://registry.npmmirror.com/vscode-languageserver-types/download/vscode-languageserver-types-3.17.0-next.4.tgz?cache=0&sync_timestamp=1633679217268&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-languageserver-types%2Fdownload%2Fvscode-languageserver-types-3.17.0-next.4.tgz"
+  "resolved" "https://registry.npmmirror.com/vscode-languageserver-types/download/vscode-languageserver-types-3.17.0-next.4.tgz"
   "version" "3.17.0-next.4"
 
 "vscode-languageserver@^8.0.0-next.2":
   "integrity" "sha1-NscBpoROwmlQVTnjuEo3aTdgpS8="
-  "resolved" "https://registry.npmmirror.com/vscode-languageserver/download/vscode-languageserver-8.0.0-next.3.tgz"
+  "resolved" "https://registry.npmmirror.com/vscode-languageserver/download/vscode-languageserver-8.0.0-next.3.tgz?cache=0&sync_timestamp=1633678416467&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-languageserver%2Fdownload%2Fvscode-languageserver-8.0.0-next.3.tgz"
   "version" "8.0.0-next.3"
   dependencies:
     "vscode-languageserver-protocol" "3.17.0-next.9"
@@ -2298,7 +2298,7 @@
 
 "with@^7.0.0":
   "integrity" "sha1-zO461ULSVTinp6gKrSErmChJW6w="
-  "resolved" "https://registry.npm.taobao.org/with/download/with-7.0.2.tgz"
+  "resolved" "https://registry.nlark.com/with/download/with-7.0.2.tgz"
   "version" "7.0.2"
   dependencies:
     "@babel/parser" "^7.9.6"

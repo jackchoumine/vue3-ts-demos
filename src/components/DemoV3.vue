@@ -2,7 +2,7 @@
  * @Description :
  * @Date        : 2021-10-27 21:57:25 +0800
  * @Author      : JackChou
- * @LastEditTime: 2021-10-28 02:06:04 +0800
+ * @LastEditTime: 2021-11-07 20:14:30 +0800
  * @LastEditors : JackChou
 -->
 <template>
@@ -23,8 +23,7 @@
 
 <script>
 import { onMounted, ref, computed, watch, reactive } from 'vue'
-// import { useTitle } from '@vueuse/core'
-import { useTitle, useFetch } from '../hooks'
+import { useTitle, useFetch } from '@hooks'
 import { state } from './store'
 export default {
   name: 'DemoV3',
@@ -51,7 +50,8 @@ export default {
     const title = computed(() => {
       return `${name.value} world`
     })
-    useTitle(title)
+    const docTitle = useTitle()
+    docTitle.value = title.value
 
     const { data, error } = useFetch('https://api.thecatapi.com/v1/categories')
 

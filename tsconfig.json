@@ -12,10 +12,23 @@
     "lib": ["esnext", "dom"],
     "types": ["vite/client"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.js", "src/**/*.js"],
-  "baseUrl": "./src",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.js",
+    "src/**/*.js",
+    "./types.d.ts"
+  ],
+  // "paths": {
+  //   "@/*": ["src/*"]
+  // }
+  // "baseUrl": "./src",
+  "baseUrl": ".",
   "paths": {
-    "@/*": ["./*"],
-    "@/com/*": ["./components/*"]
+    "@/*": ["src/*"],
+    "@com": ["src/components/*"],
+    "@hooks": ["src/hooks/*"]
   }
 }

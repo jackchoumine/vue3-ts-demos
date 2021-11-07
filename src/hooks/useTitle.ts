@@ -2,14 +2,12 @@
  * @Description :
  * @Date        : 2021-10-27 23:44:26 +0800
  * @Author      : JackChou
- * @LastEditTime: 2021-10-27 23:57:25 +0800
+ * @LastEditTime: 2021-11-07 20:12:37 +0800
  * @LastEditors : JackChou
  */
 import { watch, ref, Ref } from 'vue'
 
-declare type MaybeRef<T = unknown> = Ref<T> | T
-
-export function useTitle(newTitle: MaybeRef<string>) {
+export function useTitle(newTitle?: MaybeRef<string>) {
   const title = ref(newTitle || document.title) // NOTE 技巧：使用已有的ref
   watch(
     title,
@@ -19,5 +17,5 @@ export function useTitle(newTitle: MaybeRef<string>) {
     },
     { immediate: true }
   )
-  return { title }
+  return title
 }
