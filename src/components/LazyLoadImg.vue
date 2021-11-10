@@ -2,7 +2,7 @@
  * @Description : 
  * @Date        : 2021-11-08 00:00:52 +0800
  * @Author      : JackChou
- * @LastEditTime: 2021-11-08 00:24:31 +0800
+ * @LastEditTime: 2021-11-08 01:41:28 +0800
  * @LastEditors : JackChou
 -->
 <template>
@@ -33,6 +33,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 const placeholderImg = ref('https://fakeimg.pl/600x420/?text=loading...')
+// NOTE:
+// https://css-tricks.com/a-few-functional-uses-for-intersection-observer-to-know-when-an-element-is-in-view/
+// https://www.smashingmagazine.com/2019/04/mutationobserver-api-guide/
 onMounted(() => {
   let observer = new IntersectionObserver(
     (entries, observer) => {
