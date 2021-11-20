@@ -25,3 +25,5 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 3. Open `src/main.ts` in VSCode
 4. Open the VSCode command palette
 5. Search and run "Select TypeScript version" -> "Use workspace version"
+
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gwm9vumvfgj30n00o240u.jpg)
