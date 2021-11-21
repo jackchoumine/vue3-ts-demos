@@ -3,6 +3,7 @@
     <h1>home</h1>
     <span class="rating">hello web component in stencil!</span>
     <my-rating ref="myRating" :max-value="maxValue" :value="value" />
+    <button @click="changeRating">修改评价</button>
     <HelloWorld msg="hello web component" @plus="change">
       <template #default>
         <h3>default slot</h3>
@@ -63,5 +64,9 @@ onMounted(() => {
     // alert(`rating change ${detail.value}`)
   })
 })
+function changeRating() {
+  maxValue.value = Math.max(Math.random() * 10, 5)
+  value.value = Math.floor(Math.random() * maxValue.value)
+}
 </script>
 <style scoped lang="scss"></style>

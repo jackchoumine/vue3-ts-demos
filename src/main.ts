@@ -34,9 +34,12 @@ app.mixin({
 app.component('GlobalComponent', {})
 // app.directive('') // 全局指令
 // 引入自定义组件
-const script = document.createElement('script')
-script.type = 'module'
-script.src = 'https://unpkg.com/stencil-rating-component-test'
-document.head.appendChild(script)
+// const script = document.createElement('script')
+// script.type = 'module'
+// script.src = 'https://unpkg.com/stencil-rating-component-test'
+// document.head.appendChild(script)
+// import { defineCustomElements } from 'stencil-rating-component-test/loader'
+// defineCustomElements(window)
+
 setupRouter(app)
 app.mount('#app')
