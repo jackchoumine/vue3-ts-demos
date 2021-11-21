@@ -4,7 +4,16 @@
     <span class="rating">hello web component in stencil!</span>
     <!-- BUG 无法监听事件 -->
     <!-- https://github.com/ionic-team/stencil/issues/2804 -->
-    <my-rating ref="myRating" :max-value="maxValue" :value="value" @rating-change="ratingChange" />
+    <!-- 传递复杂数据 https://github.com/ionic-team/stencil/issues/2810 -->
+    <my-rating
+      ref="myRating"
+      :max-value="maxValue"
+      :value="value"
+      @rating-change="ratingChange"
+      :is-show="false"
+      :person.prop="{ name: 'stencil--' }"
+      :personArray.prop="personArray"
+    />
     <button @click="changeRating">修改评价</button>
     <HelloWorld msg="hello web component" @plus="change">
       <template #default>
@@ -36,7 +45,7 @@ import HelloWorld from '../components/HelloWorld.vue'
 const maxValue = ref(5)
 const value = ref(1)
 const myRating = ref(null)
-
+const personArray = ref([{ name: 'stencil' }, { name: 'vue', age: 7 }, { name: 'react' }])
 function change(count: number) {
   console.log(count)
 }
@@ -51,6 +60,8 @@ onMounted(() => {
     myRatingComponent!.maxValue = 4
     myRatingComponent!.setAttribute('value', '4')
     console.log('set value')
+    // NOTE 可检查到变化
+    personArray.value.push({ name: 'stencil-vue' })
     // maxValue.value = 10
     // @ts-ignore
     // myRating.value!.getValue({ maxValue: 10, value: 5 }).then((value) => {

@@ -38,9 +38,11 @@ app.component('GlobalComponent', {})
 // script.type = 'module'
 // script.src = 'https://unpkg.com/stencil-rating-component-test'
 // document.head.appendChild(script)
+
 // BUG vite 不支持这种写法
+// info https://github.com/ionic-team/stencil/issues/2827
 // import { defineCustomElements } from 'stencil-rating-component-test/loader'
-// defineCustomElements()
+// defineCustomElements().then(() => {})
 // defineCustomElements(window, {
 //   // @ts-ignore
 //   ce: (eventName, opts) => new CustomEvent(eventName.toLowerCase(), opts),
