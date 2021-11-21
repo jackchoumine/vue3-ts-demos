@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>home</h1>
-    <span class="rating">rating outside</span>
-    <my-rating ref="myRating" max-value="5" value="3" />
+    <span class="rating">hello web component in stencil!</span>
+    <my-rating ref="myRating" :max-value="maxValue" :value="value" />
     <HelloWorld msg="hello web component" @plus="change">
       <template #default>
         <h3>default slot</h3>
@@ -28,9 +28,10 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, nextTick } from 'vue'
 import HelloWorld from '../components/HelloWorld.vue'
-
+const maxValue = ref(5)
+const value = ref(1)
 const myRating = ref(null)
 
 function change(count: number) {
@@ -43,19 +44,23 @@ onMounted(() => {
   console.log('Home mounted')
   const myRatingComponent = document.querySelector('my-rating')
   setTimeout(() => {
-    // myRatingComponent.value = 4;
+    // @ts-ignore
+    myRatingComponent!.maxValue = 4
     myRatingComponent!.setAttribute('value', '4')
     console.log('set value')
+    // maxValue.value = 10
     // @ts-ignore
-    myRatingComponent!.getValue({ maxValue: 10, value: 5 }).then((value) => {
-      console.log('get value', value)
+    // myRating.value!.getValue({ maxValue: 10, value: 5 }).then((value) => {
+    //   console.log('get value', value)
+    // })
+    nextTick(() => {
+      console.log(myRating.value)
     })
-    console.log(myRating.value)
   }, 2000)
   // @ts-ignore
   myRatingComponent!.addEventListener('ratingChange', ({ detail }) => {
     console.log('rating changed', detail)
-    alert(`rating change ${detail.value}`)
+    // alert(`rating change ${detail.value}`)
   })
 })
 </script>
