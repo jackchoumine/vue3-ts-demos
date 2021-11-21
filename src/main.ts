@@ -38,8 +38,13 @@ app.component('GlobalComponent', {})
 // script.type = 'module'
 // script.src = 'https://unpkg.com/stencil-rating-component-test'
 // document.head.appendChild(script)
+// BUG vite 不支持这种写法
 // import { defineCustomElements } from 'stencil-rating-component-test/loader'
-// defineCustomElements(window)
+// defineCustomElements()
+// defineCustomElements(window, {
+//   // @ts-ignore
+//   ce: (eventName, opts) => new CustomEvent(eventName.toLowerCase(), opts),
+// })
 
 setupRouter(app)
 app.mount('#app')

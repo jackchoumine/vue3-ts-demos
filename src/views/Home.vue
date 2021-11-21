@@ -2,7 +2,9 @@
   <div>
     <h1>home</h1>
     <span class="rating">hello web component in stencil!</span>
-    <my-rating ref="myRating" :max-value="maxValue" :value="value" />
+    <!-- BUG 无法监听事件 -->
+    <!-- https://github.com/ionic-team/stencil/issues/2804 -->
+    <my-rating ref="myRating" :max-value="maxValue" :value="value" @rating-change="ratingChange" />
     <button @click="changeRating">修改评价</button>
     <HelloWorld msg="hello web component" @plus="change">
       <template #default>
@@ -59,14 +61,17 @@ onMounted(() => {
     })
   }, 2000)
   // @ts-ignore
-  myRatingComponent!.addEventListener('ratingChange', ({ detail }) => {
-    console.log('rating changed', detail)
-    // alert(`rating change ${detail.value}`)
-  })
+  // myRatingComponent!.addEventListener('ratingChange', ({ detail }) => {
+  //   console.log('rating changed', detail)
+  //   // alert(`rating change ${detail.value}`)
+  // })
 })
 function changeRating() {
   maxValue.value = Math.max(Math.random() * 10, 5)
   value.value = Math.floor(Math.random() * maxValue.value)
+}
+function ratingChange(event: CustomEvent) {
+  console.log('rating changed', event.detail)
 }
 </script>
 <style scoped lang="scss"></style>

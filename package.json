@@ -12,6 +12,7 @@
     "echarts": "^5.2.2",
     "ky": "^0.28.6",
     "lodash-es": "^4.17.21",
+    "stencil-rating-component-test": "^0.0.1",
     "tiny-emitter": "^2.1.0",
     "vue": "^3.2.21",
     "vue-router": "^4.0.12",

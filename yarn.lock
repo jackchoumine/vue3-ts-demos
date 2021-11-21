@@ -89,6 +89,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
+"@stencil/core@^2.7.0":
+  "integrity" "sha512-15rWMTPQ/sp0lSV82HVCXkIya3QLN+uBl7pqK4JnTrp4HiLrzLmNbWjbvgCs55gw0lULbCIGbRIEsFz+Pe/Q+A=="
+  "resolved" "https://registry.npmjs.org/@stencil/core/-/core-2.10.0.tgz"
+  "version" "2.10.0"
+
 "@types/eslint-scope@^3.7.0":
   "integrity" "sha1-jcOQp7T53Z8ShGKe/OmC5BYSEW4="
   "resolved" "https://registry.nlark.com/@types/eslint-scope/download/@types/eslint-scope-3.7.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Feslint-scope%2Fdownload%2F%40types%2Feslint-scope-3.7.1.tgz"
@@ -1938,6 +1943,13 @@
   "integrity" "sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw="
   "resolved" "https://registry.nlark.com/sprintf-js/download/sprintf-js-1.0.3.tgz?cache=0&sync_timestamp=1618847174560&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsprintf-js%2Fdownload%2Fsprintf-js-1.0.3.tgz"
   "version" "1.0.3"
+
+"stencil-rating-component-test@^0.0.1":
+  "integrity" "sha512-/zJKEpGZ0/+gkaAKyoIOMlgvi8gb9POd7LfETrrWjKr43Uv9ypZs9QwECTU3N+p5mjDtHj9J0pjFPSFd9xGWIA=="
+  "resolved" "https://registry.npmjs.org/stencil-rating-component-test/-/stencil-rating-component-test-0.0.1.tgz"
+  "version" "0.0.1"
+  dependencies:
+    "@stencil/core" "^2.7.0"
 
 "strip-ansi@^6.0.0":
   "integrity" "sha1-nibGPTD1NEPpSJSVshBdN7Z6hdk="
