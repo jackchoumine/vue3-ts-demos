@@ -15,6 +15,9 @@
       :personArray.prop="personArray"
     />
     <button @click="changeRating">修改评价</button>
+    <hr />
+    <h2>TestStencil</h2>
+    <TestStencil />
     <HelloWorld msg="hello web component" @plus="change">
       <template #default>
         <h3>default slot</h3>
@@ -42,6 +45,8 @@
 <script lang="ts" setup>
 import { onMounted, ref, nextTick } from 'vue'
 import HelloWorld from '../components/HelloWorld.vue'
+import TestStencil from './TestStencil.vue'
+
 const maxValue = ref(5)
 const value = ref(1)
 const myRating = ref(null)
