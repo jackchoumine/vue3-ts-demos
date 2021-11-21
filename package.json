@@ -14,7 +14,7 @@
     "lodash-es": "^4.17.21",
     "stencil-rating-component-test": "^0.0.1",
     "tiny-emitter": "^2.1.0",
-    "vue": "^3.2.21",
+    "vue": "^3.2.22",
     "vue-router": "^4.0.12",
     "vue-tsc": "^0.28.10",
     "vue3-webcomponent-wrapper": "^0.1.4"

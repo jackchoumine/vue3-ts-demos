@@ -2,15 +2,7 @@
  * @Description : 
  * @Date        : 2021-11-22 04:03:10 +0800
  * @Author      : JackChou
- * @LastEditTime: 2021-11-22 04:08:50 +0800
- * @LastEditors : JackChou
--->
-<!--
- * @Description: 首页
- * @Hash: ''
- * @Date: 2021-06-01 14:30:02 +0800
- * @Author: JackChou
- * @LastEditTime: 2021-11-22 04:01:27 +0800
+ * @LastEditTime: 2021-11-22 04:32:08 +0800
  * @LastEditors : JackChou
 -->
 <template>
@@ -25,6 +17,7 @@
       :personArray.prop="persons"
       @rating-change="ratingChange"
     />
+    <!-- 无法监听事件 -->
     <button @click="changeRating">changeRating</button>
   </div>
 </template>
