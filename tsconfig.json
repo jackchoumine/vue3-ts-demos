@@ -20,7 +20,7 @@
     "src/**/*.js",
     "src/**/*.js",
     "./types.d.ts"
-  ],
+, "src/views/StencilRender.jsx"  ],
   // "paths": {
   //   "@/*": ["src/*"]
   // }

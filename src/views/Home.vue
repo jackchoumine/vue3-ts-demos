@@ -18,6 +18,8 @@
     <hr />
     <h2>TestStencil</h2>
     <TestStencil />
+    <hr />
+    <StencilRender :personArray="[{ name: 'stencil------' }]" />
     <HelloWorld msg="hello web component" @plus="change">
       <template #default>
         <h3>default slot</h3>
@@ -46,6 +48,7 @@
 import { onMounted, ref, nextTick } from 'vue'
 import HelloWorld from '../components/HelloWorld.vue'
 import TestStencil from './TestStencil.vue'
+import StencilRender from './StencilRender.jsx'
 
 const maxValue = ref(5)
 const value = ref(1)
